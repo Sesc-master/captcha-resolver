@@ -1,0 +1,21 @@
+{
+  "name": "SESC-Master Captcha Resolver",
+  "description": "Extension for automatic captcha solving on lycreg.urfu.ru",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {},
+  "icons": {
+    "192": "icon-192x192.png"
+  },
+  "options_ui": {
+    "page": "settings.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lycreg.urfu.ru/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": []
+}
